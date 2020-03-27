@@ -11,20 +11,20 @@ int count_digits(char *itsString)
       {dig++;}
 
   }
+  
 return dig;
 }
 
 int main()
 {
 
-char itsString[10];
+  char itsString[10];
 
-printf( "Input string: " );
+  printf( "Input string: " );
 
-fgets( itsString, 10, stdin );
-
-
-printf("dig count:%d", count_digits(itsString));
+  fgets( itsString, 10, stdin );
+  
+  printf("dig count:%d", count_digits(itsString));
 
 return 0;
 }
