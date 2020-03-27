@@ -8,23 +8,22 @@ int i, j, dig=0;
   {
     if (itsString[i]==c)
       return i;
-
   }
 return -1;
 }
 
 int main()
 {
-char c;
+  char c;
 
-printf ("Input char and string by spaces: \n ")
-scanf("%c", &c);
+  printf ("Input char and string by spaces: \n ")
+  scanf("%c", &c);
 
-char itsString[10];
-fgets( itsString, 10, stdin );
+  char itsString[10];
+  fgets( itsString, 10, stdin );
 
 
-printf("nubmer:%d", nubmer_c(itsString, c));
+  printf("nubmer:%d", nubmer_c(itsString, c));
 
 return 0;
 }
