@@ -69,7 +69,7 @@ Node * create()
 int add(Node *head)
 {
 	char str[50] = {0};
-	printf("Input new node: \n");
+	printf("Input new node (string): \n");
 	scanf("%s", str);
 	if (_countof(str) == NULL)
 	{
@@ -184,11 +184,11 @@ void mainmenu()
 	system("cls");
 	printf("[Main Menu]\n \n");
 	printf("Press [1] to create list\n");
-	printf("Press [2] to add a new island to the end of the list \n");
-	printf("Press [3] to delete island from the end of the list\n");
-	printf("Press [4] to look the list\n");
+	printf("Press [2] to add a new element to the end of the list \n");
+	printf("Press [3] to show the list\n");
+	printf("Press [4] to delete element from the end of the list\n");
 	printf("Press [5] to delete the list\n");
-	printf("Press [6] to search island in list\n");
+	printf("Press [6] to search element in list\n");
 	printf("Press [7] to open [About]\n");
 	printf("Press [8] to open [Error-List]\n");
 	printf("Press [9] to exit from programm \n \n");
@@ -310,7 +310,7 @@ int main()
 					system("pause");
 					break;
 				}
-				del_one(&head); printf("deleted 1"); system("pause"); break;
+				del_one(&head); printf("One element is deleted "); system("pause"); break;
 			
 			case 5:
 				if (head == NULL)
@@ -320,7 +320,7 @@ int main()
 					break;
 				}
 				del_list(&head);
-				printf("deleted \n"); 
+				printf("List is deleted \n"); 
 				system("pause");
 				break;
 
